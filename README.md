@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# Sticky Notes App
+A simple Sticky Notes app built with React, TypeScript, and Vite. This app allows users to add, view, and delete sticky notes, with persistence using localStorage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Features
+Add Notes: Users can add new sticky notes using the input form.
+View Notes: Displays a list of added notes in a simple, user-friendly interface.
+Delete Notes: Remove any note from the list.
+Persistent Storage: Notes are saved in localStorage and persist across page reloads.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Getting Started
+Follow these instructions to set up and run the project on your local machine.
 
-## Expanding the ESLint configuration
+# Prerequisites
+Make sure you have the following installed:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Node.js (v16 or later)
+npm or yarn
 
-- Configure the top-level `parserOptions` property like this:
+# Installation
+1. Clone the repository:
+  git clone https://github.com/your-username/sticky-notes-app.git
+  cd sticky-notes-app
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. Install dependencies:
+  npm install
+  # OR
+  yarn
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Start the development server:
+  npm run dev
+  # OR
+  yarn dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+4. Open the app in your browser at http://localhost:5173.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Usage
+Add Notes:
+
+Type a note in the input field.
+Click "Add Note" or press Enter to add it to the list.
+
+Delete Notes:
+To delete a note, click the "Delete" button next to it.
+Persistence:
+Notes are stored in localStorage and will remain even after refreshing the page.
+
+# Technologies Used
+React: A JavaScript library for building user interfaces.
+TypeScript: For type-safe, scalable development.
+Vite: A fast and modern development build tool.
+
+# Scripts
+Here are the available npm scripts:
+npm run dev: Start the development server.
+npm run build: Build the app for production.
+npm run preview: Preview the production build locally.
+
+# License
+This project is licensed under the MIT License.
+
