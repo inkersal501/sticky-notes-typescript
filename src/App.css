@@ -102,3 +102,14 @@ button:hover {
 .note button:hover {
   background: #ff1f1f;
 }
+
+.clearBtn{
+  background: #ccc;
+  padding: 10px 15px;
+  border: none; 
+  color: #444;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}

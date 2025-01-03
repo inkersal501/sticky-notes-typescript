@@ -44,7 +44,8 @@ function App() {
               onChange={(e)=>setNote(e.target.value)}
             />
             <button type='submit'>Add Note</button>
-        </form>
+            {notes.length > 2 && <button className='clearBtn' onClick={()=>setNotes([])}>Clear All</button>}
+        </form>        
       </div>
 
       <div className="notes-container">
